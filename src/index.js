@@ -5,11 +5,12 @@ import contactPage from "./contact.js";
 
 const container = document.getElementById("content");
 
-
-document.addEventListener('DOMContentLoaded', function() {
-        container.innerHTML = ''
-        container.appendChild(homePage());
-});
+function intialLoad(){
+    document.addEventListener('DOMContentLoaded', function() {
+            container.innerHTML = ''
+            container.appendChild(homePage());
+    });
+}
 
 
 
@@ -32,3 +33,6 @@ document.addEventListener("click",(e) => {
 
 
 })
+
+
+intialLoad()
