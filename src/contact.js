@@ -1,3 +1,5 @@
+import "./pages.css"
+import img from "./assets/rest.jpeg"
 const contactPage = () => {
 
     const mainContainer = document.createElement("div");
@@ -9,9 +11,13 @@ const contactPage = () => {
     const time = document.createElement("h3");
     const address = document.createElement("h3");
 
-    image.src = "https://media.architecturaldigest.in/wp-content/uploads/amp-stories/a-kerala-eatery-fuses-nature-and-design/assets/6.webp"
+    image.src = img
+    image.classList.add('contact-img');
 
-
+    mainContainer.classList.add('main-container');
+    leftContainer.classList.add('left');
+    rightContainer.classList.add('right');
+    rightContainer.classList.add('right-modifier')
 
     heading.textContent = "find us here";
     date.textContent = "Monday to Sunday";
@@ -23,6 +29,8 @@ const contactPage = () => {
     rightContainer.appendChild(date);
     rightContainer.appendChild(time);
     rightContainer.appendChild(address);
+
+    mainContainer.classList.add('contact-modifier')
 
 
     mainContainer.appendChild(leftContainer);
